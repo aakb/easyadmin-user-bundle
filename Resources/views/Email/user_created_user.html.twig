@@ -1,0 +1,22 @@
+{% extends '@EasyAdminUser/Email/layout.html.twig' %}
+
+{% set prefix = 'user_created' %}
+{% set url = reset_password_url %}
+{% set button = {
+  url: url,
+  text: get_app_parameter(prefix ~ '.button.text')
+} %}
+
+{% block email_title %}{{ include(template_from_string(get_app_parameter(prefix ~ '.header'))) }}{% endblock %}
+
+{% block header %}
+  {{ include(template_from_string(get_app_parameter(prefix ~ '.header'))) }}
+{% endblock %}
+
+{% block body %}
+  {{ include(template_from_string(get_app_parameter(prefix ~ '.body'))) }}
+{% endblock %}
+
+{% block footer %}
+  {{ include(template_from_string(get_app_parameter(prefix ~ '.footer'))) }}
+{% endblock %}

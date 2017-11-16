@@ -1,0 +1,22 @@
+{
+    "name": "itk/easyadmin-user-bundle",
+    "description": "Itk easy admin user bundle",
+    "type": "symfony-bundle",
+    "require": {
+        "javiereguiluz/easyadmin-bundle": "^1.16",
+        "friendsofsymfony/user-bundle": "^2.0",
+        "symfony/symfony": "^3.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mikkel Ricky",
+            "email": "rimi@aarhus.dk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Itk\\Bundle\\EasyAdminUserBundle\\": ""
+        }
+    }
+}
