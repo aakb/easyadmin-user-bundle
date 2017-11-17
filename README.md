@@ -17,6 +17,9 @@ Add parameters to `app/config/parameters.yml':
     mailer_email: info@example.com
     mailer_name: Name of sender
 
+    # Url to your site
+    router.request_context.host: ~
+
     user_created:
         subject: '{{ site_name }} – brugeroprettelse'
         header: 'Bruger oprettet på {{ site_name }}'
