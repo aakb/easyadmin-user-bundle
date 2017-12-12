@@ -2,7 +2,6 @@
 
 namespace Itk\Bundle\EasyAdminUserBundle\Command;
 
-use Itk\Bundle\EasyAdminUserBundle\Entity\User;
 use Itk\Bundle\EasyAdminUserBundle\Service\UserManager;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputArgument;
@@ -29,7 +28,7 @@ class NotifyNewUsersCommand extends ContainerAwareCommand
         $helper = $this->getHelper('question');
 
         $em = $this->getContainer()->get('doctrine.orm.default_entity_manager');
-        $users = $em->getRepository(User::class)->findBy(['lastLogin' => null]);
+        $users = $em->getRepository($userManager->getClass())->findBy(['lastLogin' => null]);
         $usernames = $input->getArgument('usernames');
         foreach ($users as $user) {
             if ($usernames && !in_array($user->getUsername(), $usernames, true)) {

@@ -1,5 +1,5 @@
 {
-    "name": "itk/easyadmin-user-bundle",
+    "name": "itk-dev/easyadmin-user-bundle",
     "description": "Itk easy admin user bundle",
     "type": "symfony-bundle",
     "require": {
