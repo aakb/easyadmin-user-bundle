@@ -3,6 +3,7 @@
     "description": "Itk easy admin user bundle",
     "type": "symfony-bundle",
     "require": {
+        "php": ">=7.0",
         "javiereguiluz/easyadmin-bundle": "^1.16",
         "friendsofsymfony/user-bundle": "^2.0",
         "symfony/symfony": "^3.3"

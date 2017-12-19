@@ -11,5 +11,9 @@
 
   {{ form_widget(form) }}
 
+  {% if (app.request.query.get('create')|default(false)) %}
+    <input type="hidden" name="create" value="1"/>
+  {% endif %}
+
   <button type="submit" class="btn btn-lg btn-primary btn-block">{{ (app.request.query.get('create')|default(false) ? 'resetting.create.submit' : 'resetting.reset.submit')|trans }}</button>
 {{ form_end(form) }}

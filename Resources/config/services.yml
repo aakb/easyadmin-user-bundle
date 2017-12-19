@@ -19,3 +19,13 @@ services:
                     email: '%mailer_email%'
                     name: '%mailer_name%'
                 user_created: '%user_created%'
+
+    Itk\Bundle\EasyAdminUserBundle\EventListener\PasswordResettingListener:
+        arguments:
+            - '@router'
+            -
+              resetting:
+                  create:
+                      redirect_route: 'easyadmin'
+        tags:
+            - { name: kernel.event_subscriber }
