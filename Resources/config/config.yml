@@ -6,6 +6,6 @@ fos_user:
         user_manager: Itk\Bundle\EasyAdminUserBundle\Service\UserManager
         mailer: fos_user.mailer.twig_swift
     resetting:
-        token_ttl: 0
+        token_ttl: 86400
         email:
             template: '@EasyAdminUser/Email/password_resetting.email.twig'
