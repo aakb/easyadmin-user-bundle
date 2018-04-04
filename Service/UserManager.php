@@ -1,6 +1,6 @@
 <?php
 
-namespace Itk\Bundle\EasyAdminUserBundle\Service;
+namespace ItkDev\EasyAdminUserBundle\Service;
 
 use Doctrine\Common\Persistence\ObjectManager;
 use FOS\UserBundle\Doctrine\UserManager as BaseUserManager;

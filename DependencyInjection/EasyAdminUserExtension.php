@@ -1,8 +1,8 @@
 <?php
 
-namespace Itk\Bundle\EasyAdminUserBundle\DependencyInjection;
+namespace ItkDev\EasyAdminUserBundle\DependencyInjection;
 
-use Itk\Bundle\EasyAdminUserBundle\EventListener\PasswordResettingListener;
+use ItkDev\EasyAdminUserBundle\EventListener\PasswordResettingListener;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;

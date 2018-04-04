@@ -1,6 +1,6 @@
 <?php
 
-namespace Itk\Bundle\EasyAdminUserBundle\DependencyInjection;
+namespace ItkDev\EasyAdminUserBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

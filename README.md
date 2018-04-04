@@ -82,19 +82,17 @@ public function registerBundles()
     $bundles = [
         // …
         new FOS\UserBundle\FOSUserBundle(),
-        new Itk\Bundle\EasyAdminUserBundle\EasyAdminUserBundle(),
+        new ItkDev\EasyAdminUserBundle\EasyAdminUserBundle(),
         // …
     ];
 }
 ```
 
 
-```
-
 Run through the steps in [Integrating FOSUserBundle to Manage
 Users](https://symfony.com/doc/current/bundles/EasyAdminBundle/integration/fosuserbundle.html#creating-new-users),
 but use the
-`Itk\Bundle\EasyAdminUserBundle\Traits\EasyAdminControllerUserManager`
+`ItkDev\EasyAdminUserBundle\Traits\EasyAdminControllerUserManager`
 trait in your (user) admin controller
 (cf. https://symfony.com/doc/current/bundles/EasyAdminBundle/integration/fosuserbundle.html#creating-new-users):
 
@@ -104,13 +102,13 @@ trait in your (user) admin controller
 namespace AppBundle\Controller;
 
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AdminController as BaseAdminController;
-use Itk\Bundle\EasyAdminUserBundle\Traits\EasyAdminControllerUserManager;
+use ItkDev\EasyAdminUserBundle\Traits\EasyAdminControllerUserManager;
 
 class AdminController extends BaseAdminController
 {
     use EasyAdminControllerUserManager;
 
-	…
+    …
 }
 
 ```

@@ -3,7 +3,7 @@ fos_user:
         address: "%mailer_email%"
         sender_name: "%mailer_name%"
     service:
-        user_manager: Itk\Bundle\EasyAdminUserBundle\Service\UserManager
+        user_manager: ItkDev\EasyAdminUserBundle\Service\UserManager
         mailer: fos_user.mailer.twig_swift
     resetting:
         token_ttl: 86400

@@ -1,6 +1,6 @@
 <?php
 
-namespace Itk\Bundle\EasyAdminUserBundle\EventListener;
+namespace ItkDev\EasyAdminUserBundle\EventListener;
 
 use FOS\UserBundle\Event\FormEvent;
 use FOS\UserBundle\FOSUserEvents;

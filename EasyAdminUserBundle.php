@@ -1,6 +1,6 @@
 <?php
 
-namespace Itk\Bundle\EasyAdminUserBundle;
+namespace ItkDev\EasyAdminUserBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
